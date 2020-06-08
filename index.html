@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sonic Pi</title>
+  <meta name="description" content="Sonic Pi" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Sonic Pi" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sonic Pi" />
+  
+  
+  
+
+<meta name="author" content="Cambridge Faculty of Education Workshops 2020" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="start-here.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#install"><i class="fa fa-check"></i><b>1.1</b> Install</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#if-youre-on-a-mac"><i class="fa fa-check"></i><b>1.2</b> If you’re on a Mac…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="start-here.html"><a href="start-here.html"><i class="fa fa-check"></i><b>2</b> Start here</a><ul>
+<li class="chapter" data-level="2.1" data-path="start-here.html"><a href="start-here.html#midi-notes"><i class="fa fa-check"></i><b>2.1</b> MIDI Notes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="note-names.html"><a href="note-names.html"><i class="fa fa-check"></i><b>3</b> Note Names</a><ul>
+<li class="chapter" data-level="3.1" data-path="note-names.html"><a href="note-names.html#accidentals"><i class="fa fa-check"></i><b>3.1</b> Accidentals</a></li>
+<li class="chapter" data-level="3.2" data-path="note-names.html"><a href="note-names.html#play_pattern_timed"><i class="fa fa-check"></i><b>3.2</b> <code>play_pattern_timed</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="repetition.html"><a href="repetition.html"><i class="fa fa-check"></i><b>4</b> Repetition</a><ul>
+<li class="chapter" data-level="4.1" data-path="repetition.html"><a href="repetition.html#looping"><i class="fa fa-check"></i><b>4.1</b> Looping</a></li>
+<li class="chapter" data-level="4.2" data-path="repetition.html"><a href="repetition.html#options"><i class="fa fa-check"></i><b>4.2</b> Options</a></li>
+<li class="chapter" data-level="4.3" data-path="repetition.html"><a href="repetition.html#x.times"><i class="fa fa-check"></i><b>4.3</b> <code>x.times</code></a></li>
+<li class="chapter" data-level="4.4" data-path="repetition.html"><a href="repetition.html#loop"><i class="fa fa-check"></i><b>4.4</b> <code>loop</code></a></li>
+<li class="chapter" data-level="4.5" data-path="repetition.html"><a href="repetition.html#chords"><i class="fa fa-check"></i><b>4.5</b> Chords</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="intermission.html"><a href="intermission.html"><i class="fa fa-check"></i><b>5</b> Intermission</a></li>
+<li class="chapter" data-level="6" data-path="ideas.html"><a href="ideas.html"><i class="fa fa-check"></i><b>6</b> Ideas</a></li>
+<li class="chapter" data-level="7" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>7</b> Links</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Sonic Pi</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Sonic Pi</h1>
+<p class="author"><em>Cambridge Faculty of Education Workshops 2020</em></p>
+</div>
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<ol style="list-style-type: decimal">
+<li>This is an introduction to <strong>Sonic Pi</strong>, the free, open-source Music software.</li>
+<li>The menu pages on the left are written consecutively.</li>
+<li>The actual content of this website takes 30 mins ish, plus time for you to experiment.</li>
+<li>We will meet again at 10am on 17th June to discuss next steps, philosophy and Q+A</li>
+</ol>
+<div id="install" class="section level2">
+<h2><span class="header-section-number">1.1</span> Install</h2>
+<p class="go">
+Please install now so that you can try it out as we go: <a href="https://sonic-pi.net" class="uri">https://sonic-pi.net</a>
+</p>
+<p>Sonic Pi runs on Mac, Windows and Linux, but unfortunately not tablets/mobiles.</p>
+</div>
+<div id="if-youre-on-a-mac" class="section level2">
+<h2><span class="header-section-number">1.2</span> If you’re on a Mac…</h2>
+<p>Since it’s not authorised through the App Store, installing can be a bit of a pain.</p>
+<p>You might have to open <strong>System Preferences</strong> and open <strong>Security and Privacy</strong>. Towards the bottom of this window, you should be able to click on <strong>Open Anyway</strong>. You should only have to do this the first time you run the software.</p>
+<p><img src="images/mac-error.jpg" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="start-here.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

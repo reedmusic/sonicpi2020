@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Repetition | Sonic Pi</title>
+  <meta name="description" content="4 Repetition | Sonic Pi" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Repetition | Sonic Pi" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Repetition | Sonic Pi" />
+  
+  
+  
+
+<meta name="author" content="Cambridge Faculty of Education Workshops 2020" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="note-names.html"/>
+<link rel="next" href="intermission.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#install"><i class="fa fa-check"></i><b>1.1</b> Install</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#if-youre-on-a-mac"><i class="fa fa-check"></i><b>1.2</b> If you’re on a Mac…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="start-here.html"><a href="start-here.html"><i class="fa fa-check"></i><b>2</b> Start here</a><ul>
+<li class="chapter" data-level="2.1" data-path="start-here.html"><a href="start-here.html#midi-notes"><i class="fa fa-check"></i><b>2.1</b> MIDI Notes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="note-names.html"><a href="note-names.html"><i class="fa fa-check"></i><b>3</b> Note Names</a><ul>
+<li class="chapter" data-level="3.1" data-path="note-names.html"><a href="note-names.html#accidentals"><i class="fa fa-check"></i><b>3.1</b> Accidentals</a></li>
+<li class="chapter" data-level="3.2" data-path="note-names.html"><a href="note-names.html#play_pattern_timed"><i class="fa fa-check"></i><b>3.2</b> <code>play_pattern_timed</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="repetition.html"><a href="repetition.html"><i class="fa fa-check"></i><b>4</b> Repetition</a><ul>
+<li class="chapter" data-level="4.1" data-path="repetition.html"><a href="repetition.html#looping"><i class="fa fa-check"></i><b>4.1</b> Looping</a></li>
+<li class="chapter" data-level="4.2" data-path="repetition.html"><a href="repetition.html#options"><i class="fa fa-check"></i><b>4.2</b> Options</a></li>
+<li class="chapter" data-level="4.3" data-path="repetition.html"><a href="repetition.html#x.times"><i class="fa fa-check"></i><b>4.3</b> <code>x.times</code></a></li>
+<li class="chapter" data-level="4.4" data-path="repetition.html"><a href="repetition.html#loop"><i class="fa fa-check"></i><b>4.4</b> <code>loop</code></a></li>
+<li class="chapter" data-level="4.5" data-path="repetition.html"><a href="repetition.html#chords"><i class="fa fa-check"></i><b>4.5</b> Chords</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="intermission.html"><a href="intermission.html"><i class="fa fa-check"></i><b>5</b> Intermission</a></li>
+<li class="chapter" data-level="6" data-path="ideas.html"><a href="ideas.html"><i class="fa fa-check"></i><b>6</b> Ideas</a></li>
+<li class="chapter" data-level="7" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>7</b> Links</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Sonic Pi</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="repetition" class="section level1">
+<h1><span class="header-section-number">4</span> Repetition</h1>
+<div id="looping" class="section level2">
+<h2><span class="header-section-number">4.1</span> Looping</h2>
+<p>You can loop a block of code like this.</p>
+<pre><code>loop do
+  play 70
+  sleep 1
+end</code></pre>
+<p>The <code>do</code> and <code>end</code> act like brackets. They enclose code blocks in many situations.</p>
+<p>Here is a composition by some pupils a few years ago.</p>
+<p class="go">
+Can you use elements from their code to improve your own for another 5 mins?
+</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vl-h0uVaZWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="options" class="section level2">
+<h2><span class="header-section-number">4.2</span> Options</h2>
+<p>Use <code>amp:</code> to change the volume (<code>amp: 1</code> is default)</p>
+<p><code>play :cs5, amp: 1.5</code></p>
+</div>
+<div id="x.times" class="section level2">
+<h2><span class="header-section-number">4.3</span> <code>x.times</code></h2>
+<pre><code>3.times do
+  play 70
+  sleep 1
+end</code></pre>
+<p>You can <em>nest</em> do/end blocks:</p>
+<pre><code>3.times do
+  play 70
+  sleep 1
+  
+  5.times do
+    play 71
+    sleep 1
+  end
+end</code></pre>
+<p>Notice there are two <code>end</code>s because there are two <code>do</code>s, like pairs of brackets.</p>
+</div>
+<div id="loop" class="section level2">
+<h2><span class="header-section-number">4.4</span> <code>loop</code></h2>
+<p>A simple loop block:</p>
+<pre><code>loop do
+  play 70
+  sleep 1
+end</code></pre>
+</div>
+<div id="chords" class="section level2">
+<h2><span class="header-section-number">4.5</span> Chords</h2>
+<p><code>play [:cs5, :e5, :gs5]</code></p>
+<p>is the same as:</p>
+<p><code>play chord(:cs5, :minor)</code></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="note-names.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="intermission.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
