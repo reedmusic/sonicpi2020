@@ -9,3 +9,9 @@
   border-style:dashed;
   padding: 5px
 }
+
+.warning {
+  border-color:red;
+  border-style:solid;
+  padding: 5px
+}
