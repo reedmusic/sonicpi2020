@@ -1,0 +1,30 @@
+# Start here
+
+Watch this video for an introduction to the software.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ufJrq2_6a_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Sam Aaron
+
+The first 2:30 of this video are a great explanation. All of Sam's youtube videos are excellent.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ENfyOndcvP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Shape of You
+
+<p class="go">Try to program *Shape of You* for 5 mins</p>
+
+It starts with:
+
+```
+play 61
+```
+
+
+## MIDI Notes
+
+Here's a list of MIDI note numbers to help you convert from notes to numbers:
+
+![](images/midinotes.jpg)
+
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
