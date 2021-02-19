@@ -1,0 +1,52 @@
+---
+title: "Sonic Pi"
+author: "Cambridge Faculty of Education Workshops 2020"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: 
+    #toc_depth: 1
+    toc_depth: 2
+    css: style.css
+    number_sections: true
+    config:
+      toc:
+        #collapse: section
+        scroll_highlight: yes
+        
+  #bookdown::pdf_book: default
+---
+
+
+
+# Introduction {-}
+
+1. This is an introduction to **Sonic Pi** for Faculty trainees.
+2. The menu pages on the left are written consecutively.
+2. The actual content of this website takes 30 mins ish, plus time for you to experiment.
+3. We will meet again at 10am on 17th June to discuss next steps, philosophy and Q+A
+
+<!--
+## Help me!
+
+I'm live on Zoom chat if there's an issue. And there's a lovely tutorial in the program itself.
+-->
+
+## Handout {-}
+
+Handout document and summary of advantages/disadvantages [here](https://reedmusic.net/handout.html).
+
+## Install {-}
+
+<p class="go">Please install now so that you can try it out as we go: https://sonic-pi.net</p>
+
+Sonic Pi runs on Mac, Windows and Linux, but unfortunately not tablets/mobiles.
+
+## If you're on a Mac... {-}
+
+Since it's not authorised through the App Store, installing can be a bit of a pain.
+
+You might have to open **System Preferences** and open **Security and Privacy**. Towards the bottom of this window, you should be able to click on **Open Anyway**. You should only have to do this the first time you run the software.
+
+![](images/mac-error.jpg)
+

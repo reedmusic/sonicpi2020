@@ -1,0 +1,244 @@
+# Live session
+
+17th June, 10am.
+
+## Concurrency
+
+### `at`
+
+Give specific timings for threads (in a do/end block)
+
+```
+at 1 do
+  sample :bd_mehackit
+end
+
+at 2 do
+  sample :drum_snare_hard
+end
+
+at 2.5 do
+  sample :drum_cymbal_closed
+end
+```
+
+Or, play at multiple times using an array
+
+```
+at [1, 2, 4] do 
+    play 75          
+end
+```
+
+
+### `in_thread`
+
+`in_thread` causes that thread to run at the same time as the next thread.
+
+```
+in_thread do
+  loop do
+    play 70
+    sleep 1
+  end
+end
+
+loop do
+  play 80
+  sleep 1
+end
+```
+
+### `live_loop`
+
+`live_loop` is more powerful than `in_thread`. You do have to give the loop a name, e.g. `:name`. Every time you run the code, the loop will be updated.
+
+This means you can play it **live as an instrument**.
+
+```
+live_loop :name do
+  play 70
+  sleep 1
+end
+```
+
+
+## Rings
+
+You can play a chord by listing several notes with square brackets and commas:
+
+`play [:c4, :e4, :g4]`
+
+You can play one note after the other by 'ticking' through it:
+
+```
+loop do
+  play [:c4, :e4, :g4].tick
+  sleep 0.5
+end
+```
+
+Each loop causes the tick to increase. This can be useful for creating beats too...
+
+
+## Beat making
+
+### Ring
+
+1. I can tick through a ring
+    * This means each time the loop repeats, a different value is used
+2. I can use the `amp:` option at 0 for no beat and 1 for a beat
+3. Or use more subtle numbers for accents and ghost notes?!! ♫♪
+
+```
+use_bpm 100
+live_loop :beat do
+  sample :bd_mehackit, amp: [1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,1].tick
+  sample :drum_snare_hard, amp: [0,0,0,0,0.75,0,0,1].look
+  sleep 0.25
+end
+```
+
+<div class="warning">
+If you want to refer to the tick multiple times **you must use `.look` instead**.
+
+This is because the `.tick` doesn't just *use* the tick, it *increases* the tick by 1. You don't want it to increase more than once every loop (I imagine).
+</div>
+
+### Variables
+
+Typing out those numbers each time is a pain. Let's define a variable.
+
+```
+r1 = [1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,1]
+
+use_bpm 100
+live_loop :beat do
+  sample :bd_mehackit, amp: r1.tick
+  sleep 0.25
+end
+```
+
+Here, the variable `r1` is defined as the list of 0s and 1s. You can now use `r1` in several places without typing it all again. Or perhaps define a series of rhythms at the top of your code for easy access and live manipulation.
+
+### Randomisation
+
+If you can use a ring with `amp:`, why even bother making a rhythm? Let's go random.
+
+`rrand(x, y)` spits out a random number between x and y
+
+`rrand_i(x, y)` spits out a random integer (whole number) between x and y
+
+`rand()` outputs a random number between 0 and 1. Perfect for the `amp:` option.
+
+```
+sample :drum_cymbal_closed, amp: rrand(0.1, 0.4)
+```
+
+### Probability
+
+Random, but with a greater probability of certain outcomes. So maybe a closed hi-hat is more likely than an open hi-hat, but you're never *quite* sure where the open is going to come (and this time not just because the drummer can't count).
+
+
+## Beat splicing
+
+### Getting the loop right
+
+There are some great sample loops in Sonic Pi.^[By the way, the `sample` command has its own in-built compressor, envelope, LPF, HPF, filter envelope, pitch and tempo stretching, slicing and transient detection.]
+
+Use `sleep sample_duration` to loop the sample exactly when it's over.
+
+```
+live_loop :drums do
+  sample :loop_amen
+  sleep sample_duration :loop_amen
+end
+```
+
+This isn't very musical. Use the sample `beat_stretch:` option to fit it to an exact number of beats. It's useful if you know how long the loop is in advance. `:loop_amen` is 4 beats long.
+
+```
+use_bpm 120
+
+live_loop :drums do
+  sample :loop_amen, beat_stretch: 4
+  sleep 4
+end
+```
+
+### `slice:`
+
+This video is a great example:
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C82qCg_V70Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Use the sample `slice:` option to play one 1/16th slice of the sample.
+
+(By default, the sample is split into 16 equal parts, but you can change that too  using the `num_slices:` option)
+
+```
+live_loop :drums do
+  sample :loop_amen, slice: 0
+  sleep 0.5
+end
+```
+
+Pick specific slices:
+
+```
+live_loop :drums do
+  sample :loop_amen, slice: [0,4,6,7].choose
+  sleep 0.125
+end
+```
+
+or even random slices using 
+
+```
+live_loop :drums do
+  sample :loop_amen, slice: choose
+  sleep 0.125
+end
+```
+
+### `onset:`
+
+Even better, Sonic Pi has **transient detection**. This works out where the drum hits are by analysing the wave.
+
+So `onset: 0` should be the first hit, then `onset: 1` the next, then `onset: 2` after that, etc.
+
+```
+use_bpm 150
+live_loop :jungle do
+  sample :loop_amen, onset: choose
+  sleep 0.5
+end
+```
+
+
+## Links
+
+* [Great drum slicing examples](https://github.com/mbutz/sonic-pi-resources/blob/master/drum-loops-with-fill-ins.rb)
+
+
+
+<!--
+
+Resources for our live session next week.
+
+<a href="handout.html">Handout</a>
+
+## Live coding
+
+My primitive attempts:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sJJRcW7z1V8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Defining variables
+
+...and their creative use in live looping.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rEd58lE2H-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-->

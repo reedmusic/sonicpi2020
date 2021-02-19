@@ -1,0 +1,74 @@
+# Repetition
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/juVnq9Ffn6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Looping
+
+You can loop a block of code like this:
+
+```
+loop do
+  play 70
+  sleep 1
+end
+```
+
+The `do` and `end` act like brackets. They enclose code blocks in many situations.
+
+Here is a composition by some pupils a few years ago. 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vl-h0uVaZWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## `x.times`
+
+```
+3.times do
+  play 70
+  sleep 1
+end
+```
+
+You can *nest* do/end blocks:
+
+```
+3.times do
+  play 70
+  sleep 1
+  
+  5.times do
+    play 71
+    sleep 1
+  end
+end
+```
+
+Notice there are two `end`s because there are two `do`s, like pairs of brackets.
+
+
+## `loop`
+
+A simple loop block:
+
+```
+loop do
+  play 70
+  sleep 1
+end
+```
+
+## `play_pattern_timed`
+
+```
+use_bpm 40
+
+play_pattern_timed [:cs4, :e4, :cs4], [0.3, 0.3, 0.2], release: 0.2
+```
+
+## Chords
+
+`play [:cs5, :e5, :gs5]`
+
+is the same as:
+
+`play chord(:cs5, :minor)`

@@ -1,0 +1,17 @@
+.go {
+  border-color:#00cc00;
+  border-style:solid;
+  padding: 5px
+}
+
+.explain {
+  border-color:blue;
+  border-style:dashed;
+  padding: 5px
+}
+
+.warning {
+  border-color:red;
+  border-style:solid;
+  padding: 5px
+}

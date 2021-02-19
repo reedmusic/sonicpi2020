@@ -1,0 +1,7 @@
+# What next? 
+
+## Links
+
+* [My Sonic Pi resource, in progress](https://ereed.gitbook.io/learn-sonic-pi/lessons/7-years-old)
+* [MeHackIt](https://sonic-pi.mehackit.org/exercises/en/01-introduction/01-introduction.html)
+* [Sonic Pi Tutorial](https://sonic-pi.net/tutorial)
