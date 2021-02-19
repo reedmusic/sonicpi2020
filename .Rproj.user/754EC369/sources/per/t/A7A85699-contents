@@ -1,0 +1,35 @@
+# Note Names
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4tzi4a9Qqtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p class="go">Experiment using these code improvements for 5 mins</p>
+
+## Options and `release:`
+
+Use `amp:` to change the volume (`amp: 1` is default)
+
+`play :cs5, amp: 1.5`
+
+Use `release` to change the *release* portion of the synth envelope (how long the note lasts).
+
+`play :cs5, release: 0.2`
+
+## Note names
+
+`play 61` is equal to `play :cs4`
+
+Sharp = s
+<br>Flat = f
+
+E.g. `:cs5` and `:ef3`
+
+## Note names
+
+Here are the note names again
+
+![](images/midinotes.jpg)
+
+
+
+

@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/sonicpi2020/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "4089789943",
+    "hash": "486000978",
     "contents": "",
     "dirty": false,
     "created": 1613761540002.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "5,7",
-        "scrollLine": "0"
+        "cursorPosition": "27,84",
+        "scrollLine": "22"
     },
     "folds": "",
-    "lastKnownWriteTime": 1613761700,
+    "lastKnownWriteTime": 1613762013,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1613761700183,
+    "last_content_update": 1613762013919,
     "read_only": false,
     "read_only_alternatives": []
 }

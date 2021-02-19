@@ -1,0 +1,34 @@
+# Samples
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hgOThLONX5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+Type `sample` and when you press spacebar, the list of samples will appear.
+
+## Race for Space
+
+In past years I have set this 'Race for Space' video as a composition project. It's short but with lots of musical implications.
+
+### Stimulus
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bAPhbeGCDPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Example compositions
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/we7-ba9qWCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vl-h0uVaZWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Cover versions
+
+I did find the *Shape of You*! It's brilliant.
+
+The code is [here](https://github.com/MrReedSWCHS/Sonic-Pi/blob/master/code/shape-of-you.rb). Perhaps you can have a go at tidying it up and using some `play_pattern_timed` and other strategies to make it more readable or flexible?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9cdCcCsOe4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Here's another cover version from a few years back.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ESXvX3TYtS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
